@@ -56,4 +56,21 @@ Public Class FrmConsultaApuestas
             CerrarConexion()
         End Try
     End Sub
+
+    Private Sub EstilizarTabla()
+        With dgApuestas
+            .Font = New Font("Segoe UI", 10)
+            .ColumnHeadersDefaultCellStyle.Font = New Font("Segoe UI", 10, FontStyle.Bold)
+            .RowTemplate.Height = 28
+            .GridColor = Color.LightGray
+            .BackgroundColor = Color.WhiteSmoke
+            .SelectionMode = DataGridViewSelectionMode.FullRowSelect
+            .MultiSelect = False
+            .ReadOnly = True
+            .AllowUserToAddRows = False
+            .AllowUserToDeleteRows = False
+            .AllowUserToResizeRows = False
+        End With
+    End Sub
+
 End Class
