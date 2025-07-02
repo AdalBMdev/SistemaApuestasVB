@@ -139,9 +139,10 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Clases\" />
-    <Folder Include="Recursos\" />
+    <Content Include="BDD\Apuestas.sql" />
+    <Content Include="BDD\Rollback.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
